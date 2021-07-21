@@ -5,67 +5,82 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.card {
-  background: #1c1938;
-  width: 65%;
-  height: 55vh;
+.container {
+  display: flex;
+  align-items: center;
+  height: 96vh;
   margin: auto;
-  margin-top: 20vh;
-  border-radius: 10px;
+  justify-content: center;
 }
 
-img {
-  float: right;
-  height: 100%;
-  margin-left: 6vh;
-  border-radius: 0 10px 10px 0  ;
-  /* background-image: linear-gradient(
-        rgba(170, 92, 219,0.9) 
-        rgba(170, 92, 219,0.9)),; */
-  
-/*   filter: invert(0) sepia(1) saturate(100%) contrast(0.7) hue-rotate(220deg);
- */}
-
-.info {
-  width: 50%;
-  padding: 8vh;
-  padding-left: 10vh;
-  padding-right: 0;
+.card {
+  background: #1c1938;
+  border-radius: 10px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
   box-sizing: border-box;
+}
+.info {
+  width: 40%;
+  min-width: 455px;
+  max-width: 355px;
+  max-height: 455px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: auto;
+  margin: 0 2em;
+  padding: 3em;
+}
+
+.image {
+  min-width: 485px;
+  max-width: 455px;
+  background-color: hsl(280, 100%, 25%);
+  border-radius: 0 10px 10px 0;
+  background-size: cover;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  filter: opacity(45%);
 }
 
 .violet {
   color: hsl(277, 64%, 61%);
 }
 
-h1{
-    font-size: 4vh;
-    font-weight: 700;
-     
+h1 {
+  font-size: 2em;
+  font-weight: bold;
 }
 
 p {
   color: hsla(0, 0%, 100%, 0.6);
-  margin: auto;
 }
 
-.info__p{
-    margin-top: 4vh;
-     
-    line-height: 1.5;
+.info__p {
+  line-height: 1.5;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: justify;
+  margin-top: 5vh;
 }
 .companies,
 .templates,
 .queries {
-  display: inline-block;
-  margin: 3vh;
-  margin-top: 6vh;
   letter-spacing: 1.5px;
+  margin-right: 6.5vh;
 }
 
 .number {
-  
-  font-size: 20px;
+  font-size: 1.5em;
   color: white;
   font-weight: 700;
 }
@@ -78,14 +93,13 @@ p {
   margin-top: 1vh;
   text-align: center;
   text-transform: uppercase;
-   
 }
 
 .attribution {
   font-size: 11px;
-  position:fixed;
-   right:0px;
-   bottom:1px;
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
 }
 
 .attribution a {
